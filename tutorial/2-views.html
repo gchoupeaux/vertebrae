@@ -25,6 +25,9 @@ var Comment = Backbone.Model.extend({
    * in `new Comment(message)`, message will be passed to `initialize`. */
   initialize: function(message) {
     this.set({votes: 0, message: message});
+
+    // this.set('votes', 0);
+    // this.set('message', message);
     /* Set the initial values for `votes` to 0 and `message` to the message.
      * Remember to use setters when working with attributes! */
   },
